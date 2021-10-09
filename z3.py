@@ -11,7 +11,7 @@ class KgToPounds:
     def kg(self):
         return self.__kg
 
-    @set_kg
+    @kg.setter
     def kg(self,new_kg):
         if isinstance(new_kg, (int,float)):
             self.__kg = new_kg
